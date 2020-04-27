@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "659883751165",
+    "firebase_url": "https://inspirational-quotes-3db2e.firebaseio.com",
+    "project_id": "inspirational-quotes-3db2e",
+    "storage_bucket": "inspirational-quotes-3db2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659883751165:android:c2fb75aaf28b691c5e7094",
+        "android_client_info": {
+          "package_name": "com.muiezarif.inspirationalquotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659883751165-3uua5daf4u1a3uga3inibbq2051c8a5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muiezarif.inspirationalquotes",
+            "certificate_hash": "9729cf5802259e7fc00a31d7991b318a7f29b6e0"
+          }
+        },
+        {
+          "client_id": "659883751165-tls8ndgl3edstj74ej9i7cgc8jmomn6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlcIHW5QMFlZ-BQOEwbBoz-MifdKYIdxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659883751165-tls8ndgl3edstj74ej9i7cgc8jmomn6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

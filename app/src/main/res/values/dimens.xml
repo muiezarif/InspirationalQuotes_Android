@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tiny">@dimen/_8ssp</dimen>
+    <dimen name="small">@dimen/_10ssp</dimen>
+    <dimen name="medium">@dimen/_12ssp</dimen>
+    <dimen name="big">@dimen/_14ssp</dimen>
+    <dimen name="large">@dimen/_16ssp</dimen>
+    <dimen name="huge">@dimen/_18ssp</dimen>
+    <dimen name="huggest">@dimen/_22ssp</dimen>
+    <dimen name="monstor">@dimen/_28ssp</dimen>
+</resources>

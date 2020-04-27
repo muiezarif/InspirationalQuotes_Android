@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.ListQuotesActivity">
+        <include
+            android:id="@+id/quoteListHeader"
+            layout="@layout/custom_header"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuotesList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintTop_toBottomOf="@+id/quoteListHeader"
+            app:layout_constraintBottom_toTopOf="@id/adView"/>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_list_quote_banner">
+        </com.google.android.gms.ads.AdView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

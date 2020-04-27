@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.QuotesFragment">
+
+        <EditText
+            android:id="@+id/etSearchQuotes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:hint="@string/search_quotes_hint"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/bg_border_black"
+            android:layout_margin="@dimen/_5sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvQuotes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/etSearchQuotes"
+            app:layout_constraintBottom_toTopOf="@+id/adView"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:layout_constraintStart_toStartOf="parent"
+            ads:layout_constraintEnd_toEndOf="parent"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_quote_banner">
+        </com.google.android.gms.ads.AdView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

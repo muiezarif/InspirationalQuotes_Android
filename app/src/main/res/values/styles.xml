@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:fontFamily">@font/arial</item>
+        <item name="android:textViewStyle">@style/textView</item>
+        <item name="editTextStyle">@style/editText</item>
+        <item name="textInputStyle">@style/tilEditText</item>
+    </style>
+
+    <style name="textView" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/medium</item>
+        <item name="android:color">@color/dark_grey</item>
+    </style>
+    <style name="editText" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+    <style name="tilEditText" parent="Widget.Design.TextInputLayout">
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+
+    <style name="tilEditTextHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">@dimen/medium</item>
+    </style>
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+</resources>
